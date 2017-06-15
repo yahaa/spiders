@@ -37,11 +37,7 @@ def login(username, password):
         'txtValiCode': getcaptch()
     }
     try:
-    	resp=session.post(login_url,data=data,headers=headers)
-    	print resp.text
+        resp = session.post(login_url, data=data, headers=headers)
+        print resp.text
     except:
-    	print 'xxxxx'
-
-
-
-
+        print 'xxxxx'
